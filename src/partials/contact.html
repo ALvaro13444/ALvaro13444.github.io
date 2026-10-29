@@ -1,0 +1,76 @@
+    <!-- CONTACTO -->
+    <section class="contact" id="contacto" aria-labelledby="contact-title">
+      <div class="wrap contact__grid">
+        <div class="contact__copy">
+          <{{contactH}} class="display contact__title" id="contact-title">¿Un árbol que te preocupa? <span class="brush brush--yellow" data-paint>Manda</span> <span class="brush brush--yellow" data-paint>una foto</span></{{contactH}}>
+          <p class="lede">Respondemos con una valoración y un presupuesto sin compromiso. La forma más rápida es WhatsApp.</p>
+
+          <a class="btn btn--wa btn--xl" href="https://wa.me/34605718983?text=Hola%2C%20quer%C3%ADa%20pedir%20presupuesto%20para%20un%20%C3%A1rbol." target="_blank" rel="noopener">
+            <svg aria-hidden="true"><use href="#i-whatsapp"/></svg>
+            <span><small>Escríbenos por WhatsApp</small>605 718 983</span>
+          </a>
+
+          <ul class="contact__list" role="list">
+            <li><svg aria-hidden="true"><use href="#i-phone"/></svg><a href="tel:+34605718983">Llamar al 605 718 983</a></li>
+            <li><svg aria-hidden="true"><use href="#i-mail"/></svg><a href="mailto:daaviid.ol.2000@gmail.com">daaviid.ol.2000@gmail.com</a></li>
+            <li><svg aria-hidden="true"><use href="#i-pin"/></svg><span>Ávila y alrededores</span></li>
+          </ul>
+        </div>
+
+        <form class="quote" id="presupuesto" novalidate aria-labelledby="quote-title" data-quote>
+          <h3 class="quote__title display" id="quote-title">Pide tu presupuesto</h3>
+          <p class="quote__note">Rellena esto y te preparamos el mensaje para enviarlo por WhatsApp o por correo.</p>
+
+          <div class="field">
+            <label for="f-nombre">Nombre</label>
+            <input id="f-nombre" name="nombre" type="text" autocomplete="name" required minlength="2" aria-describedby="e-nombre">
+            <p class="field__error" id="e-nombre" aria-live="polite"></p>
+          </div>
+          <div class="field-row">
+            <div class="field">
+              <label for="f-telefono">Teléfono</label>
+              <input id="f-telefono" name="telefono" type="tel" autocomplete="tel" inputmode="tel" required aria-describedby="e-telefono">
+              <p class="field__error" id="e-telefono" aria-live="polite"></p>
+            </div>
+            <div class="field">
+              <label for="f-localidad">Localidad</label>
+              <input id="f-localidad" name="localidad" type="text" autocomplete="address-level2" required placeholder="Ávila, El Tiemblo…" aria-describedby="e-localidad">
+              <p class="field__error" id="e-localidad" aria-live="polite"></p>
+            </div>
+          </div>
+          <div class="field">
+            <label for="f-trabajo">¿Qué necesitas?</label>
+            <select id="f-trabajo" name="trabajo">
+              <option>Tala de árbol</option>
+              <option>Poda en altura</option>
+              <option>Retirada de restos</option>
+              <option>Mantenimiento de zona verde</option>
+              <option>No lo sé, quiero que lo veáis</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="f-mensaje">Cuéntanos un poco <span class="opt">(opcional)</span></label>
+            <textarea id="f-mensaje" name="mensaje" rows="3" placeholder="Tipo de árbol, altura aproximada, si está cerca de la casa…"></textarea>
+          </div>
+          <div class="field field--check">
+            <input id="f-privacidad" name="privacidad" type="checkbox" required aria-describedby="e-privacidad">
+            <label for="f-privacidad">Acepto que El Moreno use estos datos solo para responder a mi solicitud.</label>
+            <p class="field__error" id="e-privacidad" aria-live="polite"></p>
+          </div>
+
+          <button class="btn btn--lime btn--block" type="submit">Preparar mi solicitud <svg aria-hidden="true"><use href="#i-arrow"/></svg></button>
+          <p class="quote__demo">Demo: este formulario no envía datos a ningún servidor. Prepara el mensaje y lo mandas tú desde WhatsApp o tu correo.</p>
+
+          <div class="quote__done" data-quote-done hidden tabindex="-1">
+            <svg class="quote__done-icon" aria-hidden="true"><use href="#i-check"/></svg>
+            <h3 class="display">Mensaje preparado</h3>
+            <p>Elige cómo enviarlo. Se abrirá con todo escrito; solo tienes que pulsar enviar.</p>
+            <div class="quote__done-actions">
+              <a class="btn btn--wa" data-send-wa href="#" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-whatsapp"/></svg>Enviar por WhatsApp</a>
+              <a class="btn btn--ghost-dark" data-send-mail href="#"><svg aria-hidden="true"><use href="#i-mail"/></svg>Enviar por correo</a>
+            </div>
+            <button class="link-btn" type="button" data-quote-reset>Editar los datos</button>
+          </div>
+        </form>
+      </div>
+    </section>
